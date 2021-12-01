@@ -1,14 +1,11 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-*/
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+
+Route::get('/', [ProductController::class, 'index'])->name('products');
+Route::get('/product/{product}', [ProductController::class, 'show'])->name('product.show');
+
+

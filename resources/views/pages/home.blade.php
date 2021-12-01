@@ -1,7 +1,12 @@
 <x-gotime-app-layout layout="{{ config('naykel.template') }}">
 
-    <div class="container">
-        <h1>Home</h1>
+    <h1>Products</h1>
+
+    <div class="grid cols-4">
+
+
     </div>
+
+
 
 </x-gotime-app-layout>
